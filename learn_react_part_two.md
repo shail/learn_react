@@ -5,3 +5,17 @@ bundle file for you full of those changes. Three main things that webpack needs 
   - starting point of your app, root JS file
   - which transformations to make on your code
   - which location it should save the new transformed code
+
+- An issue with this webpack set up is that you manage two index.html files, one that you develop and then the
+  transformed one, an option of fixing this is that whenever webpack runs, it copies the app/index.html over
+  to /dist/index.html, already a webpack tool that allows us to do something similar
+
+- Need to create a new instance of HTMLWebpackPlugin and we will need to specify three things, first give it a
+  template of what we want the newly created file to look like, second a filename, what the new file it
+  creates will be called, and third is inject and is where you would like to inject that script, the 'head' or
+  'body'
+- webpack -w will watch your files and rebuild whenever a file changes
+- webpack -p will run through normal transformations and then minify your code when deploying to production
+
+- Babel.js is a tool for compiling JS, allows us to transform JSX into JS, you can also opt into future
+  versions of JS and use Babel to transform future JS to modern day JS
