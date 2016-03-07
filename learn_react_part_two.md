@@ -19,3 +19,8 @@ bundle file for you full of those changes. Three main things that webpack needs 
 
 - Babel.js is a tool for compiling JS, allows us to transform JSX into JS, you can also opt into future
   versions of JS and use Babel to transform future JS to modern day JS
+
+- Components are the building blocks of React, they are essentially widgets or modules. Component is a
+  collection of HTML, CSS, JS, and some internal data specific to that component. They are defined either in
+  pure JS or can be defined in JSX. What makes React great for user interfaces is that data is either received
+  from a components parent component or it is contained in the component itself
